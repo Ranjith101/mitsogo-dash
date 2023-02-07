@@ -1,0 +1,13 @@
+.sidebar {
+    background-color: #343a40;
+    height: 100vh;
+    padding: 20px 0;
+    width: 200px;
+    transition: all 0.3s;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  

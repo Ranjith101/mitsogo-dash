@@ -1,0 +1,25 @@
+/* .menu {
+  background-color: #343a40;
+  color: #fff;
+  width: 10%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.slider {
+    margin: 20px 0;
+    width: 10%;
+  } */
+
+  .menu a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .slider {
+    margin: 20px 0;
+   
+  }  
