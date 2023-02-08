@@ -9,12 +9,12 @@ import {
 } from 'cdbreact';
 import { CChart } from '@coreui/react-chartjs';
 import { NavLink } from 'react-router-dom';
-import Dashboard from './Dashboard';
-import Chart from './Chart';
-
+import './sidebar.css'
+import Users from './users';
 const Sidebar = () => {
   return (
-    <div style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}>
+    <div className='container'>
+<div style={{ display: 'flex', height: '120vh', overflow: 'scroll initial' }}>
       <CDBSidebar textColor="#fff" backgroundColor="#333">
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
           <a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
@@ -43,7 +43,8 @@ const Sidebar = () => {
           </CDBSidebarMenu>
         </CDBSidebarContent>
       </CDBSidebar>
-      <CChart
+      <div className='chart1'>
+<CChart
   type="line" 
   data={{
     labels: ["January", "February", "March", "April", "May", "June", "July"],
@@ -67,7 +68,10 @@ const Sidebar = () => {
     ],
   }}
 />
-
+<Users />
+      </div>
+      
+<div className='chart2'>
 <CChart
   type="doughnut"
   data={{
@@ -80,9 +84,10 @@ const Sidebar = () => {
     ],
   }}
 />
-      {/* <Chart /> */}
-      {/* <Dashboard /> */}
+</div>
     </div>
+    </div>
+    
   );
 };
 
